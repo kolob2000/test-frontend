@@ -1,0 +1,34 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    margin: 0 -1rem;
+    background: #FDD446;
+}
+
+.footer-container {
+    margin: 30px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    align-self: flex-start;
+    margin-right: 0.25rem;
+
+}
+
+.footer-nav {
+    list-style: none;
+}
+
+.footer-item > a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--black);
+    transition: color 0.2s ease-in;
+}
+
+.footer-item > a:hover {
+    color: rgba(0, 0, 0, 0.6);
+}

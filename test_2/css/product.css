@@ -1,0 +1,158 @@
+.product {
+
+}
+
+.product-column {
+    margin-bottom: 1.25rem;
+}
+
+.product-item {
+
+    padding: 5px 5px 8px;
+    border-color: rgba(48, 47, 46, 0.7)
+}
+
+.product-item > a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+}
+
+.product-title {
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 22px;
+}
+
+.product-star {
+    margin-bottom: 5px;
+}
+
+.product-img {
+    object-fit: contain;
+}
+
+.product-name {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 11px;
+}
+
+.product-status {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-weight: 400;
+    font-size: 7px;
+    line-height: 11px;
+    color: var(--gold);
+}
+
+.product-status:after {
+    content: url("../img/stataus.png");
+    width: 9px;
+    height: 9px;
+}
+
+.product-rareness, .product-price {
+
+    font-size: 9px;
+}
+
+.product-rareness {
+    line-height: 16px;
+    margin-bottom: 4px;
+
+}
+
+.product-rareness > span {
+    background: var(--liner-top);
+
+    display: flex;
+
+}
+
+.product-rareness > span > span {
+    font-size: 7px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    padding: 0 9px;
+    border: 1px solid transparent;
+    background: #fff;
+    background-origin: border-box;
+    background-clip: padding-box;
+}
+
+.product-price {
+    line-height: 17px;
+    margin-bottom: 6px;
+}
+
+.product-price > span {
+    display: flex;
+    align-items: center;
+    font-size: 7px;
+    line-height: 13px;
+    /*padding: 0 9px;*/
+    background: var(--gold);
+}
+
+.product-button {
+    margin: 0 5px;
+    background: var(--liner);
+    font-size: 10px;
+    line-height: 16px;
+    transition: background-color 0.2s ease-in;
+}
+
+.product-button:hover {
+    background: #ccab38;
+}
+
+/*//////////////////////////////////////////////////////////////*/
+.container-pagination {
+    margin-bottom: 5rem;
+}
+
+.page-link {
+    padding: 0;
+    margin: 0 30px;
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 38px;
+    color: var(--black);
+}
+
+.page-link:hover {
+    background: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.page-active {
+    display: flex;
+    margin: 0 20px;
+    justify-content: center;
+    align-items: center;
+    background: #FDD446;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: color 0.2s ease-in;
+
+}
+
+.pages > :nth-child(2) > a, .pages > :nth-last-child(2) > a {
+    margin: 0 20px;
+}
+
+.page-active:hover {
+    background: #ccab38;
+}
+
+.page-prev, .page-next {
+    margin: 0 20px;
+}

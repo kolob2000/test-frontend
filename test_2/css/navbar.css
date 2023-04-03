@@ -1,0 +1,17 @@
+.navbar {
+    margin: 10px 0 30px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.burger-toggler {
+    background-image: url("../img/burger.svg");
+
+}

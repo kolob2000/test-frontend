@@ -1,0 +1,205 @@
+.profile {
+    position: relative;
+    background: var(--liner);
+
+}
+
+
+.card-profile {
+    padding: 7px 7px 6px;
+    border-color: transparent;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+
+}
+
+
+.card-profile > div {
+    gap: 7px;
+}
+
+.profile-title {
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 8px;
+}
+
+.profile-status {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    font-size: 6px;
+    line-height: 8px;
+    color: var(--gold);
+    margin-bottom: 3px;
+}
+
+.profile-status:after {
+    content: url("../img/product-status.png");
+    width: 7px;
+    height: 7px;
+}
+
+.profile-text {
+    font-size: 7px;
+    line-height: 9px;
+}
+
+.card-description {
+    font-size: 7px;
+    line-height: 9px;
+    margin-bottom: 1px;
+    min-height: 37px;
+}
+
+.profile-collection, .profile-price {
+    margin-bottom: 2px;
+}
+
+.profile-price {
+    display: flex;
+    gap: 3px;
+}
+
+.profile-bold {
+    font-weight: 500;
+    font-size: 7px;
+    line-height: 9px;
+    text-decoration-line: underline;
+}
+
+.profile-top-collections {
+    font-size: 7px;
+    line-height: 8px;
+}
+
+
+.collectors-container {
+    top: 101px;
+    /*height: 152px;*/
+    position: absolute;
+    z-index: 1;
+    background: var(--liner);
+}
+
+.collectors {
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    background: #ffffff;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.collectors-table {
+    text-align: center;
+    background: #ffffff;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.collectors-table > thead > tr > th,
+.collectors-table > tbody > tr > th,
+.collectors-table > tbody > tr > td {
+    border-right: solid 1px #dee2e6;
+    height: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.collectors-table > tbody > tr > th:last-child,
+.collectors-table > thead > tr > th:last-child,
+.collectors-table > tbody > tr > td:last-child {
+    border-right: none;
+}
+
+.collectors-table > thead > tr > th {
+    font-weight: 700;
+    font-size: 6px;
+    line-height: 9px;
+}
+
+.collectors-table > tbody > tr > th {
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 10px;
+}
+
+.collectors-table > tbody > tr > td {
+    font-weight: 400;
+    font-size: 6px;
+    line-height: 7px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.collector-img {
+    margin-right: 3px;
+}
+
+.collector-hidden {
+    font-weight: 400;
+    font-size: 6px;
+    line-height: 7px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.collector-score {
+    font-weight: 500 !important;
+    line-height: 10px !important;
+}
+
+.table-button {
+    background: linear-gradient(90deg, #FDD446 0%, #F79B47 100%);
+    font-weight: 400;
+    font-size: 5px;
+    line-height: 7px;
+    border: none;
+    padding: 3px 10px;
+
+}
+
+/*////////*/
+.collectors-container-pagination {
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+.page-item > .collectors-page-link {
+    padding: 0;
+    margin: 0 12px;
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 7px;
+    line-height: 15px;
+    color: var(--black);
+}
+
+
+.page-item > .collectors-page-active {
+    display: flex;
+    margin: 0 8px!important;
+    justify-content: center;
+    align-items: center;
+    background: #FDD446 !important;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: color 0.2s ease-in;
+
+}
+
+.collectors-pages > :nth-child(2) > a, .collectors-pages > :nth-last-child(2) > a {
+    margin: 0 7px;
+}
+
+.collectors-page-active:hover {
+    background: #ccab38;
+}
+
+.collectors-page-prev, .collectors-page-next {
+    margin: 0 7px!important;
+}

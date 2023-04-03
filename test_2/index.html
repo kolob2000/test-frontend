@@ -1,0 +1,872 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="d-flex flex-column align-content-center px-3">
+<header class="container-sm px-0">
+    <nav class="navbar  py-0">
+        <div class="container-fluid px-0 ">
+            <a class="navbar-brand py-0" href="#"><img src="img/logo.svg" alt="logo"></a>
+            <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon burger-toggler">
+
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container-sm profile  p-0 rounded-3">
+    <div class="card card-profile rounded-3">
+        <div class="d-flex flex-row">
+            <div class="col-auto">
+                <img src="img/profile.png" class="card-img rounded-0" alt="profile">
+            </div>
+            <div class="col">
+                <div class="card-body  p-0">
+                    <h5 class="card-title profile-title my-0">Ивлеева Анастасия</h5>
+                    <p class="profile-status">проверено</p>
+                    <p class="card-description">История о звезде. История о звезде. История о звезде. История о звезде.
+                        История
+                        о звезде. История о звезде. История о звезде. История о звезде. История о звезде. История о
+                        звезде. История о звезде. История о звезде. </p>
+                    <p class="profile-collection profile-text">
+                        Всего коллекций: <span class="profile-bold">10</span>
+                    </p>
+                    <div class="profile-price profile-text">
+                        Стоимость: <p class="m-0">
+                        от
+                        <span class="profile-bold">500 ₽</span>
+                        до <span class="profile-bold">1000000 ₽</span>
+                    </p>
+                    </div>
+                    <p class="profile-top-collections profile-bold my-0">
+                        Топовые коллекционеры
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-sm collectors-container p-0 rounded-3">
+        <div class="collectors rounded-3">
+            <table class="table-sm table align-middle  my-0 p-0 rounded-3 collectors-table">
+                <thead>
+                <tr class="align-middle">
+                    <th scope="col">Рейтинг</th>
+                    <th scope="col">ID/nickname</th>
+                    <th scope="col">Имя</th>
+                    <th scope="col">Сумма баллов</th>
+
+
+                    <th scope="col"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">#1</th>
+                    <td><img class="collector-img" src="img/collector1.svg" alt="photo">@zwezda123...</td>
+                    <td>Варветкина Ангелина</td>
+                    <td class="collector-score">845</td>
+                    <td>
+                        <button type="button" class="btn btn-sm rounded-pill table-button">
+                            Подробнее
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">#2</th>
+                    <td class="collector-hidden">Пользователь скрыт</td>
+                    <td class="collector-hidden">Варветкина Ангелина</td>
+                    <td class="collector-score">800</td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">#3</th>
+                    <td><img class="collector-img" src="img/collector2.svg" alt="photo">1234923452...</td>
+                    <td>Пучкова Анастасия</td>
+                    <td class="collector-score">787</td>
+                    <td>
+                        <button type="button" class="btn btn-sm rounded-pill table-button">
+                            Подробнее
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">#4</th>
+                    <td class="collector-hidden">Пользователь скрыт</td>
+                    <td class="collector-hidden">Пользователь скрыт</td>
+                    <td class="collector-score">781</td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">#5</th>
+                    <td><img class="collector-img" src="img/collector3svg.svg" alt="photo">124к948...</td>
+                    <td>Мацуев Илья</td>
+                    <td class="collector-score">743</td>
+                    <td>
+                        <button type="button" class="btn btn-sm rounded-pill table-button">
+                            Подробнее
+                        </button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="container-sm collectors-container-pagination">
+                <nav class="d-flex justify-content-center" aria-label="Page navigation example">
+                    <ul class="pagination collectors-pages border-0 my-0">
+                        <li class="page-item">
+                            <a class="page-link collectors-page-link collectors-page-prev" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link collectors-page-link collectors-page-active" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link collectors-page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link collectors-page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link collectors-page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link collectors-page-link" href="#">5</a></li>
+                        <li class="page-item">
+                            <a class="page-link collectors-page-link collectors-page-next" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-sm px-0 search">
+    <input class="form-control-sm form-control  rounded-pill " type="text" placeholder="Поиск..."
+           aria-label="form-control-sm example">
+</div>
+<div class="container-sm sorting p-0">
+    <div class="d-flex ">
+        <div class="col-5 px-0 ">
+            <select class="form-select-sm form-select rounded-3 filters" aria-label="Default select example">
+                <option selected>Фильтры</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+        <div class="col px-0">
+            <select class="form-select-sm form-select rounded-3 options" aria-label=" Default select example">
+                <option selected>По умолчанию</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<main class="container-sm px-0 mt-3 pt-1 main">
+    <div class="row gx-3">
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+        <div class="col-6 product-column">
+            <div class="card rounded-0 product-item">
+                <a href="">
+                    <img class="img-fluid" src="img/img.png" alt="">
+                    <h5 class="product-title m-0">Без слов</h5>
+                    <div class="product-star d-flex gap-1">
+                        <img class="product-img" src="img/small_profile.png" alt="">
+                        <div class="star-left">
+                            <p class="product-name my-0">Настя Ивлеева Вячеславовна</p>
+                            <p class="product-status my-0">проверено</p>
+                        </div>
+                    </div>
+                    <div class="product-rareness d-flex justify-content-between">Редкость:
+                        <span class="rounded-1">
+                        <span class="rounded-1">уникальная</span>
+                    </span></div>
+                    <div class="product-price d-flex justify-content-between">Цена:
+                        <span class="rounded-1 px-2 border-1">от 500 ₽</span></div>
+                </a>
+                <button type="button" class="btn btn-warning product-button btn-sm rounded-3">Купить</button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-sm container-pagination">
+        <nav class="d-flex justify-content-center" aria-label="Page navigation example">
+            <ul class="pagination pages border-0">
+                <li class="page-item">
+                    <a class="page-link page-prev" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link page-active" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                    <a class="page-link page-next" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+</main>
+<footer class="footer">
+    <div class="container footer-container p-0">
+        <ul class="footer-nav p-0">
+            <li class="footer-item"><a href="">Что такое NFT</a></li>
+            <li class="footer-item"><a href="">Создайте NFT с нами</a></li>
+            <li class="footer-item"><a href="">О нас</a></li>
+            <li class="footer-item"><a href="">Отправить запрос</a></li>
+            <li class="footer-item"><a href="">Условия использования</a></li>
+            <li class="footer-item"><a href="">Политика конфиденциальности</a></li>
+        </ul>
+        <img src="img/footer-logo.svg" alt="logo" class="footer-logo">
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+:root {
+    --liner: linear-gradient(to left, #FFC107 34.84%, #FDD446 100%);
+    --liner-top: linear-gradient(to top, #FFC107 34.84%, #FDD446 100%);
+    --grey: #CCCBC7;
+    --gren: #00AD30;
+    --red: #FD4646;
+    --black: #000000;
+    --gold: #FFBF00;
+    --semi-black: #0000007F;
+
+
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: var(--black);
+    background: url("../img/background.png") repeat-y, url("../img/back_bottom.png") no-repeat bottom center;
+    background-size: contain;
+}

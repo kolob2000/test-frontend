@@ -1,0 +1,40 @@
+.search > input {
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    background: url(../img/search.png) no-repeat center left 20px;
+    margin-top: 30px;
+    padding: 8px 20px 9px 42px;
+
+}
+
+.search > input::placeholder {
+    color: var(--semi-black);
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.sorting {
+    margin-top: 15px;
+}
+
+.sorting > div {
+    gap: 7px;
+}
+
+.filters, .options {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 13px;
+}
+
+.filters {
+    background: url("../img/fiters.png") no-repeat center right 7px;
+}
+
+.options {
+    background: url("../img/chevron-down.png") no-repeat center right 7px;
+}
